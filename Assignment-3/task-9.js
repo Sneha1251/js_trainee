@@ -1,4 +1,4 @@
-// Write a program to print fibonaaci series
+//Write a program to print fibonaaci series
 let i=0;
 console.log(i);
 let j=1;

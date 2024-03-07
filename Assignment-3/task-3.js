@@ -1,4 +1,4 @@
-// Write a program to display Diamond Pattern
+//Write a program to display Diamond Pattern
 //         *
 //       *  *
 //     *  *  *
