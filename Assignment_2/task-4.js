@@ -1,7 +1,7 @@
 // Write a function expression that takes in a number and returns its square.
 
-const square = function (length){
-    return length * length;
+const squareOfNumber = function (length) {
+  return length * length;
 };
 
-console.log("Sqaure of number is ",square(5));
+console.log("Sqaure of number is ", squareOfNumber(5));

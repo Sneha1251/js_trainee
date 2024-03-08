@@ -1,32 +1,35 @@
 // All of the above questions from 3-6 needs to be done with arrow functions also
 
 //3
-const inner=()=>{
-    return 'hello world!';
-}
-const outer=(inner)=>{
-    console.log(inner());
-}
+const inner = () => {
+  return "hello world!";
+};
+
+const outer = (inner) => {
+  console.log(inner());
+};
+
 outer(inner);
 
 //4
-const square = (length)=>{
-    return length * length;
+const squareOfNumbers = (length) => {
+  return length * length;
 };
 
-console.log("Sqaure of number is ",square(5));
+console.log("Sqaure of number is ", squareOfNumbers(5));
 
 // 5
-const sum = (first,second)=>{
-    return first + second;
+const sumOfNumbers = (first, second) => {
+  return first + second;
 };
 
-console.log("Sum of number is ",sum(5,6));
+console.log("Sum of number is ", sumOfNumbers(5, 6));
 
 //6
-const check =  (number)=>{
-    if(number%2==0)return true;
-    else return false;
+const checkNumber = (number) => {
+  if (number % 2 !== 0) return false;
+
+  return true;
 };
 
-console.log(check(5));
+console.log('Even Number: ', checkNumber(5));
