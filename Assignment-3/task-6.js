@@ -3,7 +3,7 @@ let flag = false;
 for (let i = 2; i <= 50; i++) {
   flag = false;
   for (let j = 2; j <= i / 2; j++) {
-    if (i % j == 0) {
+    if (i % j === 0) {
       flag = true;
     }
   }

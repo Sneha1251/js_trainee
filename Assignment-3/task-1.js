@@ -1,34 +1,38 @@
 // Write a program to perform functionality of a calculator (add,sub,multiply,divide)
-let ch="";
-let x=0, y=0, res=0;
+let choice = "";
+let firstNumber = 0,
+  secondNumber = 0,
+  result = 0;
 
-ch =prompt("Enter your choice:");
-x = prompt("Enter first number");
-x= parseInt(x);
-y = prompt("Enter second number");
-y=parseInt(y);
+choice = prompt("Enter your choice:");
+firstNumber = prompt("Enter first number");
+firstNumber = parseInt(firstNumber);
+secondNumber = prompt("Enter second number");
+secondNumber = parseInt(secondNumber);
 
-switch (ch) {
+switch (choice) {
   case "add":
-  res = x + y;
-  console.log("\nResult is :" + res)
-  break
+    result = firstNumber + secondNumber;
+    console.log("\nResult is :" + result);
+    break;
 
   case "sub":
-  res = x - y
-  console.log("\nResult is :" + res)
-  break
+    result = firstNumber - secondNumber;
+    console.log("\nResult is :" + result);
+    break;
 
   case "mul":
-  res = x * y
-  console.log("\nResult is :" + res)
-  break
+    result = firstNumber * secondNumber;
+    console.log("\nResult is :" + result);
+    break;
 
   case "div":
-  res = x / y
-  console.log("\nResult is :" + res)
-  break
+    result = firstNumber / secondNumber;
+    console.log("\nResult is :" + result);
+    break;
 
   default:
-  console.log("Invalid Choice:" + ch)
+    console.log("Invalid Choice:" + choice);
 }
+
+

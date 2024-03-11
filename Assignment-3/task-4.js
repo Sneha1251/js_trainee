@@ -2,13 +2,13 @@
 let evenNumbers = [];
 let oddNumbers = [];
 for (let i = 0; i < 50; i++) {
-  if (i % 2 == 0) {
+  if (i % 2 === 0) {
     evenNumbers.push(i);
   }
 }
 console.log("Even no", evenNumbers);
 for (let i = 0; i < 50; i++) {
-  if (i % 2 != 0) {
+  if (i % 2 !== 0) {
     oddNumbers.push(i);
   }
 }
