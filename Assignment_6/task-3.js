@@ -2,53 +2,47 @@
 // 3.2 Create a class Student that inherits from the Person class and has a property studies. Override the greeting() method to include information about what the student is studying.
 // 3.3 Create a class Teacher that inherits from the Person class and has a property subjectsTaught. Override the farewell() method to include information about what the teacher teaches
 
-class Person{
-    constructor(name,age,gender,interests){
-        this.name=name;
-        this.age=age;
-        this.gender=gender;
-        this.interests=interests;
-    }
-    greeting(){
-       return `Hello ${this.name}! Hope this message finds you well. Welcome to Successive Digital`
-    }
-    farewell(){
-      return `Goodbye ${this.name}! Nice to meet you`
-    }
+class Person {
+  constructor(name, age, gender, interests) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  }
+  greeting() {
+    return `Hello ${this.name}! Hope this message finds you well. Welcome to Successive Digital`;
+  }
+  farewell() {
+    return `Goodbye ${this.name}! Nice to meet you`;
+  }
 }
 
-class Student extends Person{
-    studies = ""
-    constructor(name, age, gender, interests, studies){
-       
-       super(name,age,gender,interests)
-       this.studies=studies;
-    }
-    greeting(){
-        return `Hello ${this.name}! You are studying ${this.studies}`;
-    }
+class Student extends Person {
+  constructor(name, studies) {
+    super(name);
+    this.studies = studies;
+  }
+  greeting() {
+    return `Hello ${this.name}! You are studying ${this.studies}`;
+  }
 }
 
-class Teacher extends Person{
-    subjectsTaught="";
-    constructor(age, subjectsTaught){
-       
-        super(age)
-       this.subjectsTaught=subjectsTaught;
-    }
-    farewell(){
-        return `Goodbye ${this.age}! Teacher will teach you ${this.subjectsTaught}`;
-    }
+class Teacher extends Person {
+  constructor(name, subjectsTaught) {
+    super(name);
+    this.subjectsTaught = subjectsTaught;
+  }
+  farewell() {
+    return `Goodbye ${this.name}! Teacher will teach you ${this.subjectsTaught}`;
+  }
 }
 
-const person=new Person("Sneha",23,"Female","Painting");
+const person = new Person("Sneha", 23, "Female", "Painting");
 console.log(person.greeting());
 console.log(person.farewell());
 
-const student=new Student("Sneha",23,"Female","Painting","Coding");
+const student = new Student("Sneha", "Coding");
 console.log(student.greeting());
 
-const teacher=new Teacher("Javascript");
+const teacher = new Teacher("Sneha", "Javascript");
 console.log(teacher.farewell());
-
-

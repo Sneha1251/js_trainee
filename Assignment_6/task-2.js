@@ -15,7 +15,6 @@ class Shape {
   }
 }
 
-
 class Rectangle extends Shape {
   constructor(width, height) {
     super(width, height);
@@ -26,12 +25,11 @@ class Rectangle extends Shape {
   }
 }
 
-
 class Triangle extends Shape {
   constructor(width, height) {
     super(width, height);
   }
-  
+
   getArea() {
     return 0.5 * this.width * this.height;
   }
