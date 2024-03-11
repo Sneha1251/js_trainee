@@ -15,4 +15,3 @@ for (let i = 0; i < string1.length; i++) {
 
 console.log("The occurence of each letter in given string is:", result);
 
-

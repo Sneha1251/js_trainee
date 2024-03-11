@@ -25,4 +25,3 @@ for (key in obj) {
 }
 console.log(obj2);
 
-
