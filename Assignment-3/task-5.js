@@ -1,12 +1,11 @@
 // Write a program to print all even number first and then all odd numbers using only one iteration
-let even="";
-let odd="";
-for(let i=0;i<100;i++){
-    if(i%2==0){
-        even=even+i+" ";
-    }
-    else{
-        odd=odd+i+" ";
-    }
+let evenNumbers = [];
+let oddNumbers = [];
+for (let i = 0; i < 100; i++) {
+  if (i % 2 === 0) {
+    evenNumbers.push(i);
+  } else {
+    oddNumbers.push(i);
+  }
 }
-console.log(even+odd);
+console.log(evenNumbers, "\n", oddNumbers);
