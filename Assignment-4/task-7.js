@@ -12,7 +12,7 @@ for (i in arr) {
 }
 
 for (key in obj) {
-  if (obj[key].length == 1) {
+  if (obj[key].length === 1) {
     delete obj[key];
   }
 }

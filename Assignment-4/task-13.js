@@ -11,7 +11,7 @@ const makeInverseArray = (arr) => {
 
 const checkInverse = (arr, inverseArr) => {
   for (i in arr) {
-    if (arr[i] != inverseArr[i]) {
+    if (arr[i] !== inverseArr[i]) {
       console.log("The array inverse is not possible");
       return false;
     }

@@ -14,4 +14,3 @@ for (let i = 0; i < originalStr.length; i++) {
   }
 }
 console.log(dupStr);
-

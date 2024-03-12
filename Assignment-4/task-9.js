@@ -4,7 +4,7 @@ const arr = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7, 8];
 
 const obj = {};
 for (i in arr) {
-  if (obj[arr[i]] != undefined) {
+  if (obj[arr[i]] !== undefined) {
     obj[arr[i]].push(i);
   } else {
     obj[arr[i]] = [i];
@@ -12,7 +12,7 @@ for (i in arr) {
 }
 
 for (key in obj) {
-  if (obj[key].length == 1) {
+  if (obj[key].length === 1) {
     delete obj[key];
   }
 }

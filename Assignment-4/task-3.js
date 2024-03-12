@@ -2,7 +2,7 @@
 
 const string1 = "abcabcdabbcc";
 
-let result = {};
+const result = {};
 
 for (let i = 0; i < string1.length; i++) {
   let ch = string1[i];

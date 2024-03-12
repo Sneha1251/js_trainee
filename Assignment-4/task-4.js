@@ -2,9 +2,9 @@
 
 const str = "Hello My Name Is Sneha Gupta";
 
-let upperCase = str.toUpperCase();
+const upperCase = str.toUpperCase();
 console.log(upperCase);
 
-let lowerCase = str.toLowerCase();
+const lowerCase = str.toLowerCase();
 console.log(lowerCase);
 
