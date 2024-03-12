@@ -1,0 +1,1 @@
+// Implement a function that returns a resolved Promise after a specified delay using async/await.

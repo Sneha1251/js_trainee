@@ -1,0 +1,14 @@
+//  Give an example of using multiple callback functions in a single function in JavaScript
+
+function getData(dataId, getNextData) {
+    setTimeout(() => {
+      console.log("data", dataId);
+      if (getNextData) {
+        getNextData();
+      }
+    }, 2000);
+  }
+  
+  getData(1, () => {
+    getData(2);
+  });
