@@ -20,5 +20,5 @@ const checkInverse = (arr, inverseArr) => {
 };
 
 makeInverseArray(arr);
-let res = checkInverse(arr, inverseArr);
-res === true ? console.log(inverseArr) : console.log("Not inversible")
+const res = checkInverse(arr, inverseArr);
+const result = !res ? console.log("Not inversible") : console.log(inverseArr);
