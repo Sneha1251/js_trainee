@@ -6,11 +6,8 @@ const studentObj = [
   { name: "Pritam", age: 23, id: "1236" },
   { name: "Raksha", age: 21, id: "1237" },
 ];
+console.log(studentObj);
 
-let removedIdObject = studentObj.filter((obj) => {
-  return delete obj.id;
-});
+const removedIdObject = studentObj.filter((obj) => delete obj.id);
 
 console.log(removedIdObject);
-
-

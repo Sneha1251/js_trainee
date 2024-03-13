@@ -7,13 +7,8 @@ const studentObj = [
   { name: "Raksha", age: 21 },
 ];
 
-for (let keys in studentObj) {
-  let value = studentObj[keys];
-  sortedData = studentObj.sort(function (a, b) {
-    return a.age - b.age;
-  });
-}
+const sortedData = studentObj.sort(function (a, b) {
+  return a.age - b.age;
+});
 
 console.log(sortedData);
-
-

@@ -8,7 +8,7 @@ const exampleObj = {
 
 const deepClone = (obj) => {
   const deepCloneObj = {};
-  for (let keys in obj) {
+  for (const keys in obj) {
     deepCloneObj[keys] = obj[keys];
   }
   return deepCloneObj;

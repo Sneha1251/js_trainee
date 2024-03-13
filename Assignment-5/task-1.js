@@ -6,8 +6,8 @@ const exampleObj = {
   genre: "Mystery",
 };
 
-for (let keys in exampleObj) {
-  let value = exampleObj[keys];
+for (const keys in exampleObj) {
+  const value = exampleObj[keys];
   console.log(`${keys}:${value}`);
 }
 
