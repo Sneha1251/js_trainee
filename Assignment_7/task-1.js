@@ -12,3 +12,4 @@ function third() {
 }
 
 getData(1, third);
+
