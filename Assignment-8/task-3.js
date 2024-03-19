@@ -9,6 +9,7 @@
 
 // -------------ERROR-------------
 // Use const instead of let for myArray
+// We can use reduce instead of for each in the sum of myArray
 
 const myArray = [1, 2, 3, 4];
 for (let i = 0; i < myArray.length; i++) {

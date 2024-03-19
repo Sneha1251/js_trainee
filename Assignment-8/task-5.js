@@ -19,7 +19,7 @@ for (let i = 0; i < myArray.length; i++) {
   console.log(myArray[i]);
 }
 
-const myNumber = myArray[myArray.length - 1];
+const myNumber = myArray[5];
 if (myNumber) {
   console.log("The number is: " + myNumber);
 } else {

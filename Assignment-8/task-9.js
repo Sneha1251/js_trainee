@@ -3,7 +3,7 @@
 // console.log(person.name);
 
 //----------ERROR------
-// Use const instead for var for person
+// Use const instead of var for person
 
 function Person(name, age) {
   this.name = name;
