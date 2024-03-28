@@ -6,11 +6,13 @@
 function add(a, b) {
   const sumOfNumber = a + b;
   console.log(sumOfNumber);
+  return sumOfNumber;
 }
 
 function subtract(a, b) {
   const subtractOfNumber = a - b;
   console.log(subtractOfNumber);
+  return subtractOfNumber;
 }
 
 export { add, subtract };
